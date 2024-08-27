@@ -21,9 +21,9 @@ Welcome to ZK Email. This documentation contains everything you need to understa
 
 ZK Email is a technology that enables anonymous verification of email signatures while protecting sensitive data. It allows for:
 
-* Verification of emails from specific domains or domain subsets
-* Authentication based on specific email content
-* Creation of on-chain anonymity sets
+* Verification of emails from specific domains or domain subsets.
+* Authentication based on specific email content.
+* Creation of on-chain anonymity sets.
 
 This technology bridges the gap between Web2 and Web3, enabling decentralized, privacy-preserving email verification for various applications.
 

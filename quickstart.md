@@ -13,9 +13,8 @@ Let's explore these components and get you started!
 
 Make sure you have the following tools installed:
 
-* **Node.js** (version 14 or later)
-* **npm** or **yarn** (package manager)
-* **Git** (for cloning repositories)
+* **Node.js** (version 14 or later).
+* **npm** or **yarn** (package manager).
 {% endhint %}
 
 ## Choose your ZK Email Components
@@ -31,10 +30,10 @@ Click on each component to learn more about its specific features and use cases.
 
 Each component's documentation includes:
 
-1. Installation instructions
-2. Basic usage examples
-3. API references
-4. Advanced configurations
+1. Installation instructions.
+2. Basic usage examples.
+3. API references.
+4. Advanced configurations.
 
 {% hint style="info" %}
 Click on each component to learn more about its specific features and use cases. Remember, you can use these components individually or in combination.
