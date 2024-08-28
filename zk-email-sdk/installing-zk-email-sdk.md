@@ -3,7 +3,7 @@
 ## Prerequisites
 
 {% hint style="info" %}
-**Before You Begin:**
+**Before you begin:**
 
 Make sure you have the following tools installed:
 
@@ -26,7 +26,7 @@ Choose your framework below for specific setup and installation instructions.
 
 {% tabs %}
 {% tab title="React (Vite)" %}
-#### 1. Create a new React project with Vite
+**1. Create a new React project with Vite**
 
 For npm users:
 
@@ -40,15 +40,13 @@ For yarn users:
 yarn create vite my-zk-email-app --template react-ts
 ```
 
-This guide will walk you through the complete process of setting up a project, configuring the environment, and installing the ZK Email SDK, with specific instructions for React and different Next.js approaches.
-
-#### 2. Navigate to the project directory
+**2. Navigate to the project directory**
 
 ```bash
 cd my-zk-email-app
 ```
 
-#### 3. Install dependencies
+**3. Install dependencies**
 
 For npm users:
 
@@ -62,7 +60,7 @@ For yarn users:
 yarn
 ```
 
-#### 4. Install the ZK Email SDK
+**4. Install the ZK Email SDK**
 
 For npm users:
 
@@ -76,7 +74,7 @@ For yarn users:
 yarn add @zk-email/zk-email-sdk
 ```
 
-#### 5. Create an environment file
+**5. Create an environment file**
 
 Create a new file named `.env` in the root of your project:
 
@@ -90,7 +88,7 @@ Add your Google OAuth Client ID to the `.env` file:
 VITE_GOOGLE_OAUTH_CLIENT_ID=your_client_id_here
 ```
 
-#### 6. Configuration
+**6. Configuration**
 
 Update your `src/App.tsx` file:
 
@@ -110,41 +108,10 @@ function App() {
 
 export default App;
 ```
-
-#### 7. Usage
-
-Create a new component, e.g., `src/components/EmailComponent.tsx`:
-
-```tsx
-import React from 'react';
-import { useGoogleAuth, useZkEmailSDK } from "@zk-email/zk-email-sdk";
-
-function EmailComponent() {
-  const {
-    googleAuthToken,
-    isGoogleAuthed,
-    loggedInGmail,
-    googleLogIn,
-    googleLogOut,
-  } = useGoogleAuth();
-
-  const {
-    createInputWorker,
-    generateInputFromEmail,
-    generateProofRemotely,
-    proofStatus,
-    inputWorkers
-  } = useZkEmailSDK();
-
-  // Your component logic here
-}
-
-export default EmailComponent;
-```
 {% endtab %}
 
 {% tab title="Next.js (App Router)" %}
-#### 1. Create a new Next.js project
+**1. Create a new Next.js project**
 
 For npm users:
 
@@ -162,18 +129,18 @@ Choose the following options:
 
 * Would you like to use TypeScript? › Yes
 * Would you like to use ESLint? › Yes
-* Would you like to use Tailwind CSS? › No (or Yes, if you prefer)
+* Would you like to use Tailwind CSS? › Yes (or No, if you prefer)
 * Would you like to use `src/` directory? › Yes
 * Would you like to use App Router? › Yes
 * Would you like to customize the default import alias? › No
 
-#### 2. Navigate to the project directory
+**2. Navigate to the project directory**
 
 ```bash
 cd my-zk-email-app
 ```
 
-#### 3. Install the ZK Email SDK
+**3. Install the ZK Email SDK**
 
 For npm users:
 
@@ -187,7 +154,7 @@ For yarn users:
 yarn add @zk-email/zk-email-sdk
 ```
 
-#### 4. Create an environment file
+**4. Create an environment file**
 
 Create a new file named `.env.local` in the root of your project:
 
@@ -201,7 +168,7 @@ Add your Google OAuth Client ID to the `.env.local` file:
 NEXT_PUBLIC_GOOGLE_OAUTH_CLIENT_ID=your_client_id_here
 ```
 
-#### 5. Configuration
+**5. Configuration**
 
 Create a new file `src/app/providers.tsx`:
 
@@ -237,40 +204,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   )
 }
 ```
-
-#### 6. Usage
-
-Create a new component, e.g., `src/components/EmailComponent.tsx`:
-
-```tsx
-'use client'
-
-import { useGoogleAuth, useZkEmailSDK } from "@zk-email/zk-email-sdk";
-
-export default function EmailComponent() {
-  const {
-    googleAuthToken,
-    isGoogleAuthed,
-    loggedInGmail,
-    googleLogIn,
-    googleLogOut,
-  } = useGoogleAuth();
-
-  const {
-    createInputWorker,
-    generateInputFromEmail,
-    generateProofRemotely,
-    proofStatus,
-    inputWorkers
-  } = useZkEmailSDK();
-
-  // Your component logic here
-}
-```
 {% endtab %}
 
 {% tab title="Next.js (Pages Router)" %}
-#### 1. Create a new Next.js project
+**1. Create a new Next.js project**
 
 For npm users:
 
@@ -288,18 +225,18 @@ Choose the following options:
 
 * Would you like to use TypeScript? › Yes
 * Would you like to use ESLint? › Yes
-* Would you like to use Tailwind CSS? › No (or Yes, if you prefer)
+* Would you like to use Tailwind CSS? › Yes (or No, if you prefer)
 * Would you like to use `src/` directory? › Yes
 * Would you like to use App Router? › No
 * Would you like to customize the default import alias? › No
 
-#### 2. Navigate to the project directory
+**2. Navigate to the project directory**
 
 ```bash
 cd my-zk-email-app
 ```
 
-#### 3. Install the ZK Email SDK
+**3. Install the ZK Email SDK**
 
 For npm users:
 
@@ -313,7 +250,7 @@ For yarn users:
 yarn add @zk-email/zk-email-sdk
 ```
 
-#### 4. Create an environment file
+**4. Create an environment file**
 
 Create a new file named `.env.local` in the root of your project:
 
@@ -327,7 +264,7 @@ Add your Google OAuth Client ID to the `.env.local` file:
 NEXT_PUBLIC_GOOGLE_OAUTH_CLIENT_ID=your_client_id_here
 ```
 
-#### 5. Configuration
+**5. Configuration**
 
 Create or update `src/pages/_app.tsx`:
 
@@ -348,24 +285,18 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 export default MyApp;
 ```
+{% endtab %}
+{% endtabs %}
 
-#### 6. Usage
+## Usage
 
-Create a new component, e.g., `src/components/EmailComponent.tsx`:
+Create a new component to start using the ZK Email SDK. Here's an example:
 
 ```tsx
-import { useEffect, useState } from 'react';
+import React from 'react';
 import { useGoogleAuth, useZkEmailSDK } from "@zk-email/zk-email-sdk";
 
-export default function EmailComponent() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) return null;
-
+function EmailComponent() {
   const {
     googleAuthToken,
     isGoogleAuthed,
@@ -384,12 +315,10 @@ export default function EmailComponent() {
 
   // Your component logic here
 }
+
+export default EmailComponent;
 ```
-{% endtab %}
-{% endtabs %}
 
 ## Next Steps
 
 Now that you have installed and configured the ZK Email SDK, you're ready to start using it in your application. Check out the Using the SDK guide for detailed instructions on how to leverage the SDK's features in your project.
-
-###
