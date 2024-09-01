@@ -25,22 +25,6 @@ The ZK Email SDK operates on a few key principles:
 3. **Verification**: The generated proof can be verified by anyone without access to the original email, ensuring privacy while confirming the authenticity of the claims.
 4. **Integration**: The SDK provides easy-to-use interfaces for integrating these proofs into your applications, whether they're web apps, smart contracts, or other systems.
 
-## Use Cases
-
-The ZK Email SDK can be applied in numerous scenarios, including:
-
-* Decentralized Identity Verification
-* Secure Document Sharing
-* Anti-Spam Measures
-* Private Mailing Lists
-* Blockchain Governance
-* Credential Issuance
-* Selective Disclosure
-
-{% hint style="info" %}
-For detailed examples of each use case, check out our Use Cases Guide.
-{% endhint %}
-
 ## Getting Started
 
 To start using the ZK Email SDK, visit our [Regex Registry](https://registry-dev.zkregex.com) where you can:

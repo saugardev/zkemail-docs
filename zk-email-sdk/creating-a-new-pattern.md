@@ -5,7 +5,7 @@ Custom patterns define what information you want to extract and verify from emai
 ## Accessing the ZK Regex Registry
 
 1. Navigate to the [ZK Regex Registry](https://registry-dev.zkregex.com/)
-2. Click on "Submit" to begin creating a new pattern.
+2. Click on "Submit a new pattern" to begin creating a new pattern.
 
 ## Pattern Details
 
