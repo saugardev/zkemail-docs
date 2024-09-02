@@ -60,8 +60,6 @@ The Account Recovery system consists of several key components:
 
 The Account Recovery Component introduces several concepts that work together to provide a secure, privacy-preserving, and flexible framework for email-based wallet recovery and smart contract interactions.
 
-These concepts leverage advanced cryptographic techniques and zero-knowledge proofs to bridge the gap between traditional email communication and blockchain technology.
-
 {% hint style="info" %}
 These concepts form the foundation of our secure and privacy-preserving account recovery system. For a detailed explanation, watch our [2024 EthCC talk](https://ethcc.io/archive/ZK-Email-Decentralized-Email-Login-Account-Recovery-2FA).
 {% endhint %}
